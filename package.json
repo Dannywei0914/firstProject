@@ -1,0 +1,43 @@
+{
+  "name": "firstProject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Dannywei0914/firstProject.git",
+  "author": "<Dannywei0914> <<a0932819576@gmail.com>>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html --port 9922 --open",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          "> 1%",
+          "last 2 versions",
+          "not ie < 10"
+        ],
+        "grid": true
+      }
+    }
+  },
+  "dependencies": {
+    "reset-css": "^5.0.1",
+    "sweetalert2": "^9.10.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "autoprefixer": "^9.7.6",
+    "sass": "^1.26.5"
+  }
+}

@@ -1,0 +1,118 @@
+$lineCount: 10;
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 4px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+  background: #607D8B;
+}
+
+.center {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.part {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transition: transform 300ms cubic-bezier(0.77, 0, 0.175, 1), border-radius 100ms ease-in-out;
+}
+
+// @for $i from 1 through $lineCount {
+//     $nullBase: $i - 1;
+//     $degree: 360 / $lineCount;
+    
+//     #part-#{$i} {
+//         animation: animate-part-#{$i} 10s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+//     }
+    
+//     @keyframes animate-part-#{$i} {
+//         0% {
+//             transform: scale(0);
+//         }
+        
+//         5% {
+//             transform: scale(1);
+//         }
+        
+//         10% {
+//             transform: rotate(#{$degree * $nullBase}deg);
+//         }
+        
+//         15% {
+//             transform: rotate(#{$degree * $nullBase}deg) translate3d(0, -100px, 0) scaleX(0.2);
+//         }
+        
+//         20% {
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(0, -100px, 0) scaleX(2) scaleY(0.4);
+//         }
+
+//         25% {
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(0, -50px, 0) scaleX(5) scaleY(.4);
+//         }
+        
+//         30% {
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(0, -50px, 0) scaleX(10) scaleY(.4);
+//         }
+        
+//         35% {
+//             border-radius: 0;
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(0, -150px, 0);
+//         }
+        
+//         40% {
+//             border-radius: 50%;
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(0, -150px, 0);
+//         }
+        
+//         45% {
+//             border-radius: 0;
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(0, -100px, 0) scaleY(5) scaleX(0.5);
+//         }
+        
+//         50% {
+//             border-radius: 0;
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(10, 0px, 0) scaleY(.2) scaleX(5);
+//         }
+        
+//         55% {
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(0, -100px, 0) scaleY(3) scaleX(0.5) skewX(89deg);
+//         }
+                
+//         75% {
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(0, -100px, 0) scaleY(1) scaleX(1) skewY(89deg);
+//         }
+        
+//         85% {
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(0, -100px, 0) scaleY(1) scaleX(1);
+//         }
+        
+//         90% {
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(0, -100px, 0) scaleY(2) scaleX(.4);
+//         }
+
+//         95% {
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(0, 5px, 0) scaleY(.2) scaleX(.2) rotate(179deg);
+//         }
+
+//         100% {
+//             transform: rotate(#{$degree * $nullBase * 3}deg) translate3d(0, -500px, 0) scaleY(10) rotate(900deg);
+//         }
+
+//     }
+// }
